@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halo Orb — El sonido, en forma de luz</title>
+  <meta name="description" content="Halo Orb: altavoz esférico con sonido 360°, luz adaptativa y 24 horas de batería.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navegación global -->
+  <header class="gnav">
+    <nav class="gnav__inner" aria-label="Global">
+      <a class="logo" href="#" aria-label="Halo, inicio">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.2" fill="currentColor"/></svg>
+      </a>
+      <ul class="gnav__links">
+        <li><a href="#" aria-current="page">Orb</a></li>
+        <li><a href="#">Orb mini</a></li>
+        <li><a href="#">Hogar</a></li>
+        <li><a href="#">Accesorios</a></li>
+        <li><a href="#">Soporte</a></li>
+      </ul>
+      <a class="gnav__bag" href="#comprar" aria-label="Cesta">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Zm3 0V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Navegación local (fija) -->
+  <div class="lnav" id="lnav">
+    <div class="lnav__inner">
+      <span class="lnav__title">Halo Orb</span>
+      <div class="lnav__right">
+        <a href="#dentro" class="lnav__link">Por dentro</a>
+        <a href="#acabados" class="lnav__link">Acabados</a>
+        <a href="#especificaciones" class="lnav__link">Especificaciones</a>
+        <a href="#comprar" class="pill pill--sm">Comprar</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__stick">
+        <div class="hero__copy">
+          <p class="eyebrow">Nuevo</p>
+          <h1 id="hero-title" class="hero__title">Halo Orb</h1>
+          <p class="hero__sub">El sonido, en forma de luz.</p>
+        </div>
+
+        <div class="stage">
+          <div class="orb" aria-hidden="true">
+            <span class="orb__mesh"></span>
+            <span class="orb__shine"></span>
+          </div>
+          <div class="halo" aria-hidden="true"></div>
+          <div class="floor" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero__cta">
+          <a href="#comprar" class="pill">Comprar</a>
+          <a href="#manifiesto" class="link">Descubre más <span aria-hidden="true">›</span></a>
+          <p class="hero__price">Desde 249 €</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFIESTO: palabras que se encienden con el scroll -->
+    <section class="statement" id="manifiesto" aria-label="Manifiesto">
+      <div class="statement__stick">
+        <p class="statement__text" data-words>
+          Diseñamos un altavoz que no se esconde en una esquina. Lanza el sonido en 360 grados, se ilumina cuando lo tocas y se apaga cuando no lo necesitas.
+        </p>
+      </div>
+    </section>
+
+    <!-- POR DENTRO: vista despiezada en 3D -->
+    <section class="inside" id="dentro" aria-labelledby="inside-title">
+      <div class="inside__stick">
+        <header class="inside__head">
+          <p class="eyebrow eyebrow--muted">Por dentro</p>
+          <h2 id="inside-title" class="h2">Cuatro capas.<br>Un solo gesto.</h2>
+        </header>
+
+        <div class="explode" aria-hidden="true">
+          <div class="explode__stack">
+            <div class="disc disc--mesh" style="--i:1.5"></div>
+            <div class="disc disc--driver" style="--i:.5"></div>
+            <div class="disc disc--board" style="--i:-.5"></div>
+            <div class="disc disc--ring" style="--i:-1.5"></div>
+          </div>
+        </div>
+
+        <ol class="callouts">
+          <li class="callout" data-at=".22"><span class="callout__n">01</span><strong>Malla acústica</strong> Tejido de poliéster reciclado, transparente al sonido.</li>
+          <li class="callout" data-at=".38"><span class="callout__n">02</span><strong>Transductor de 70 mm</strong> Recorrido largo para graves que se sienten.</li>
+          <li class="callout" data-at=".54"><span class="callout__n">03</span><strong>Chip H2</strong> Ajusta la ecualización a la sala cada segundo.</li>
+          <li class="callout" data-at=".70"><span class="callout__n">04</span><strong>Anillo de luz</strong> 48 LED que siguen el ritmo de lo que suena.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ACABADOS -->
+    <section class="finishes" id="acabados" aria-labelledby="fin-title">
+      <div class="container">
+        <h2 id="fin-title" class="h2 reveal">Elige tu luz.</h2>
+        <p class="lede reveal">Cuatro acabados, cada uno con su propio tono de anillo.</p>
+
+        <div class="finishes__stage reveal">
+          <div class="stage stage--sm">
+            <div class="orb" aria-hidden="true">
+              <span class="orb__mesh"></span>
+              <span class="orb__shine"></span>
+            </div>
+            <div class="halo" aria-hidden="true"></div>
+            <div class="floor" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="swatches reveal" role="radiogroup" aria-label="Acabado">
+          <button class="swatch" role="radio" aria-checked="true"  data-finish="grafito" style="--sw:#3a3b3f" aria-label="Grafito"></button>
+          <button class="swatch" role="radio" aria-checked="false" data-finish="arena"   style="--sw:#d8cbb6" aria-label="Arena"></button>
+          <button class="swatch" role="radio" aria-checked="false" data-finish="salvia"  style="--sw:#8fa592" aria-label="Salvia"></button>
+          <button class="swatch" role="radio" aria-checked="false" data-finish="coral"   style="--sw:#e2765f" aria-label="Coral"></button>
+        </div>
+        <p class="finish-name" aria-live="polite">Grafito</p>
+      </div>
+    </section>
+
+    <!-- LUZ QUE ESCUCHA -->
+    <section class="listen" aria-labelledby="listen-title">
+      <div class="container listen__grid">
+        <div class="listen__copy">
+          <p class="eyebrow eyebrow--muted">Luz adaptativa</p>
+          <h2 id="listen-title" class="h2 reveal">La luz que escucha.</h2>
+          <p class="lede reveal">El anillo responde a cada golpe de bombo y a cada silencio. Por la noche baja a un brillo cálido, casi una vela.</p>
+          <button class="play reveal" type="button" aria-pressed="false">
+            <span class="play__icon" aria-hidden="true"></span>
+            <span class="play__label">Reproducir demo</span>
+          </button>
+        </div>
+        <div class="eq reveal" aria-hidden="true">
+          <div class="eq__ring"></div>
+          <div class="eq__bars"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESPECIFICACIONES: bento -->
+    <section class="specs" id="especificaciones" aria-labelledby="specs-title">
+      <div class="container">
+        <h2 id="specs-title" class="h2 reveal">Pequeño por fuera.<br><span class="dim">Enorme en todo lo demás.</span></h2>
+
+        <div class="bento">
+          <article class="tile tile--wide reveal">
+            <p class="tile__k">Batería</p>
+            <p class="tile__big"><span class="grad" data-count="24">24</span> h</p>
+            <p class="tile__note">de reproducción continua. Diez minutos de carga, tres horas de música.</p>
+          </article>
+
+          <article class="tile reveal">
+            <svg class="tile__ico" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="6" fill="currentColor"/><circle cx="32" cy="32" r="15" fill="none" stroke="currentColor" stroke-width="2" opacity=".6"/><circle cx="32" cy="32" r="25" fill="none" stroke="currentColor" stroke-width="2" opacity=".3"/></svg>
+            <p class="tile__big"><span data-count="360">360</span>°</p>
+            <p class="tile__note">Sonido en todas direcciones.</p>
+          </article>
+
+          <article class="tile reveal">
+            <svg class="tile__ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 10c9 12 15 20 15 28a15 15 0 0 1-30 0c0-8 6-16 15-28Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
+            <p class="tile__big">IP67</p>
+            <p class="tile__note">Resiste agua y polvo. Llévalo a la piscina.</p>
+          </article>
+
+          <article class="tile tile--wide tile--light reveal">
+            <p class="tile__k">Peso</p>
+            <p class="tile__big"><span data-count="890">890</span> g</p>
+            <p class="tile__note">Cabe en una mano. Llena una habitación de 40 m².</p>
+          </article>
+
+          <article class="tile tile--wide reveal">
+            <p class="tile__k">Conexión</p>
+            <p class="tile__big tile__big--fit">Bluetooth 5.4</p>
+            <p class="tile__note">Wi‑Fi y modo multisala incluidos. Cambia de móvil a portátil sin tocar nada.</p>
+          </article>
+
+          <article class="tile reveal">
+            <div class="pair" aria-hidden="true"><span></span><span></span></div>
+            <p class="tile__big">Estéreo</p>
+            <p class="tile__note">Junta dos Orb y se reparten los canales solos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="buy" id="comprar" aria-labelledby="buy-title">
+      <div class="container buy__inner">
+        <div class="stage stage--xs reveal">
+          <div class="orb" aria-hidden="true">
+            <span class="orb__mesh"></span>
+            <span class="orb__shine"></span>
+          </div>
+          <div class="halo" aria-hidden="true"></div>
+          <div class="floor" aria-hidden="true"></div>
+        </div>
+        <h2 id="buy-title" class="buy__title reveal">Halo Orb</h2>
+        <p class="buy__price reveal">249 € o 20,75 €/mes en 12 meses<sup>1</sup></p>
+        <div class="buy__actions reveal">
+          <a href="#" class="pill">Comprar</a>
+          <a href="#especificaciones" class="link">Ver especificaciones <span aria-hidden="true">›</span></a>
+        </div>
+        <ul class="perks reveal">
+          <li><strong>Envío gratis</strong><span>Llega en 2 días laborables.</span></li>
+          <li><strong>30 días</strong><span>Si no te convence, lo devuelves.</span></li>
+          <li><strong>2 años</strong><span>De garantía en toda Europa.</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="container">
+      <p>1. Financiación sujeta a aprobación. TAE 0 %. Halo es una marca ficticia creada como demostración de diseño.</p>
+      <p>Autonomía medida a volumen medio con la luz en modo adaptativo; los resultados reales varían según el uso.</p>
+      <p class="foot__copy">© 2026 Halo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
